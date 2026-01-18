@@ -99,7 +99,7 @@ function App() {
             title: "入住迪士尼度假區",
             location: "迪士尼度假區",
             description: "搭乘計程車直達飯店門口。辦理入住手續，晚上欣賞度假區夜景。",
-            image: "/HK_trip/Day1_Disney.jpg",
+            image: "/HK_trip/disney01.jpg",
             duration: "自由活動",
           }
         },
