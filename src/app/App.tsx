@@ -3,13 +3,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/app/components/ui/ta
 import { TripHeader } from "@/app/components/TripHeader";
 import { FlightCard } from "@/app/components/FlightCard";
 import { DayView, TimelineItemType } from "@/app/components/DayView";
-import { Plane, Calendar, Info, MapPin } from "lucide-react";
+import { Plane, Info, MapPin } from "lucide-react";
 import { Card } from "@/app/components/ui/card";
 
 function App() {
   const [activeDay, setActiveDay] = useState("day1");
 
-  // ⚠️ 注意：為了配合 GitHub Pages，所有圖片路徑前面都加了 "/HK_trip"
+  // 1. 標題背景圖
+  // 你的檔名是 header-bg.jpg，所以路徑是：
   const tripData = {
     destination: "香港迪士尼 · 港鐵色彩之旅",
     startDate: "2026年1月27日",
@@ -57,6 +58,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
+        // 2. Day 1 住宿：你的檔名是 hotel01.jpg
         image: "/HK_trip/hotel01.jpg"
       },
       timeline: [
@@ -77,6 +79,7 @@ function App() {
             title: "抵達香港",
             location: "香港國際機場 (HKG)",
             description: "入境香港，領取行李。",
+            // 3. 機場：你的檔名是 airport01.jpg
             image: "/HK_trip/airport01.jpg", 
             duration: "1小時",
           }
@@ -99,6 +102,7 @@ function App() {
             title: "入住迪士尼度假區",
             location: "迪士尼度假區",
             description: "搭乘計程車直達飯店門口。辦理入住手續，晚上欣賞度假區夜景。",
+            // 4. Day 1 迪士尼：你的檔名是 disney01.jpg (你原本寫 Day1_Disney.jpg，這是錯的！)
             image: "/HK_trip/disney01.jpg",
             duration: "自由活動",
           }
@@ -123,6 +127,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
+        // Day 2 住宿繼續用 hotel01.jpg
         image: "/HK_trip/hotel01.jpg"
       },
       timeline: [
@@ -133,6 +138,7 @@ function App() {
             title: "香港迪士尼樂園",
             location: "香港迪士尼樂園",
             description: "全日遊玩迪士尼樂園！探索魔雪奇緣世界、明日世界、欣賞遊行與城堡煙火。",
+            // 5. Day 2 迪士尼：你的檔名是 disney02.jpg
             image: "/HK_trip/disney02.jpg",
             duration: "全日",
           }
@@ -168,6 +174,7 @@ function App() {
        accommodation: {
         name: "旭逸酒店·荃灣",
         location: "香港荃灣",
+        // 6. Day 3 住宿：你的檔名是 hotel02.jpg
         image: "/HK_trip/hotel02.jpg"
       },
       timeline: [
@@ -259,6 +266,7 @@ function App() {
       accommodation: { 
         name: "旭逸酒店·荃灣", 
         location: "香港荃灣",
+        // Day 4 住宿
         image: "/HK_trip/hotel02.jpg"
       },
       timeline: [
