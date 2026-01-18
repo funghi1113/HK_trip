@@ -9,12 +9,12 @@ import { Card } from "@/app/components/ui/card";
 function App() {
   const [activeDay, setActiveDay] = useState("day1");
 
+  // ⚠️ 注意：為了配合 GitHub Pages，所有圖片路徑前面都加了 "/HK_trip"
   const tripData = {
     destination: "香港迪士尼 · 港鐵色彩之旅",
     startDate: "2026年1月27日",
     endDate: "2026年1月31日",
-    // 💡 這裡讀取你的 Local 首圖
-    image: "/header-bg.jpg" 
+    image: "/HK_trip/header-bg.jpg" 
   };
 
   const flightData = [
@@ -57,8 +57,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
-        // 💡 讀取 Local 圖片
-        image: "/Day1_Hotel.jpg"
+        image: "/HK_trip/Day1_Hotel.jpg"
       },
       timeline: [
         {
@@ -78,12 +77,10 @@ function App() {
             title: "抵達香港",
             location: "香港國際機場 (HKG)",
             description: "入境香港，領取行李。",
-            // 💡 讀取 Local 圖片
-            image: "/Day1_Airport.jpg", 
+            image: "/HK_trip/Day1_Airport.jpg", 
             duration: "1小時",
           }
         },
-        // 🚕 計程車安排
         {
           type: "transport",
           data: {
@@ -102,8 +99,7 @@ function App() {
             title: "入住迪士尼度假區",
             location: "迪士尼度假區",
             description: "搭乘計程車直達飯店門口。辦理入住手續，晚上欣賞度假區夜景。",
-            // 💡 讀取 Local 圖片
-            image: "/Day1_Disney.jpg",
+            image: "/HK_trip/Day1_Disney.jpg",
             duration: "自由活動",
           }
         },
@@ -127,7 +123,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
-        image: "/Day1_Hotel.jpg"
+        image: "/HK_trip/Day1_Hotel.jpg"
       },
       timeline: [
         {
@@ -137,8 +133,7 @@ function App() {
             title: "香港迪士尼樂園",
             location: "香港迪士尼樂園",
             description: "全日遊玩迪士尼樂園！探索魔雪奇緣世界、明日世界、欣賞遊行與城堡煙火。",
-            // 暫時用網路圖，若有 local 可改 /disney-day.jpg
-            image: "/Day2_Disney.jpg",
+            image: "/HK_trip/Day2_Disney.jpg",
             duration: "全日",
           }
         },
@@ -173,8 +168,7 @@ function App() {
        accommodation: {
         name: "旭逸酒店·荃灣",
         location: "香港荃灣",
-        // ✅ 這裡補上了圖片，格式就會正常了
-        image: "/Day3_Hotel.jpg"
+        image: "/HK_trip/Day3_Hotel.jpg"
       },
       timeline: [
         {
@@ -265,8 +259,7 @@ function App() {
       accommodation: { 
         name: "旭逸酒店·荃灣", 
         location: "香港荃灣",
-        // ✅ 這裡也補上了圖片
-        image: "/Day3_Hotel.jpg"
+        image: "/HK_trip/Day3_Hotel.jpg"
       },
       timeline: [
         {
@@ -302,7 +295,7 @@ function App() {
         {
           type: "transport",
           data: {
-            type: "plane" as const, // 這裡偷懶用 car 代替，因為沒有 plane icon
+            type: "plane" as const, 
             from: "香港",
             to: "高雄",
             time: "18:50",
