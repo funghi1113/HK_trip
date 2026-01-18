@@ -57,7 +57,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
-        image: "/HK_trip/Day1_Hotel.jpg"
+        image: "/HK_trip/hotel01.jpg"
       },
       timeline: [
         {
@@ -77,7 +77,7 @@ function App() {
             title: "抵達香港",
             location: "香港國際機場 (HKG)",
             description: "入境香港，領取行李。",
-            image: "/HK_trip/Day1_Airport.jpg", 
+            image: "/HK_trip/airport01.jpg", 
             duration: "1小時",
           }
         },
@@ -123,7 +123,7 @@ function App() {
       accommodation: {
         name: "香港迪士尼樂園酒店 / 探索家度假酒店",
         location: "香港迪士尼度假區",
-        image: "/HK_trip/Day1_Hotel.jpg"
+        image: "/HK_trip/hotel01.jpg"
       },
       timeline: [
         {
@@ -133,7 +133,7 @@ function App() {
             title: "香港迪士尼樂園",
             location: "香港迪士尼樂園",
             description: "全日遊玩迪士尼樂園！探索魔雪奇緣世界、明日世界、欣賞遊行與城堡煙火。",
-            image: "/HK_trip/Day2_Disney.jpg",
+            image: "/HK_trip/disney02.jpg",
             duration: "全日",
           }
         },
@@ -168,7 +168,7 @@ function App() {
        accommodation: {
         name: "旭逸酒店·荃灣",
         location: "香港荃灣",
-        image: "/HK_trip/Day3_Hotel.jpg"
+        image: "/HK_trip/hotel02.jpg"
       },
       timeline: [
         {
@@ -259,7 +259,7 @@ function App() {
       accommodation: { 
         name: "旭逸酒店·荃灣", 
         location: "香港荃灣",
-        image: "/HK_trip/Day3_Hotel.jpg"
+        image: "/HK_trip/hotel02.jpg"
       },
       timeline: [
         {
