@@ -1,20 +1,13 @@
 import { defineConfig } from 'vite'
-import path from 'path'
-import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  // ⚠️ 注意：這裡 '/hong-kong-trip/' 必須跟你在 GitHub 取的專案名稱一模一樣！
-  // 格式是：'/專案名稱/' (前後都要有斜線)
-  base: '/HK_trip/', 
+// https://vite.dev/config/
+export default defineConfig(({ command }) => ({
   plugins: [
     react(),
     tailwindcss(),
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
-})
+  // 👇 關鍵邏輯：如果是 build (打包上傳) 就加上儲存庫名稱，否則用根目錄
+  base: command === 'build' ? '/HK_trip/' : '/',
+}))
